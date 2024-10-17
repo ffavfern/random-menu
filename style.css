@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1e1e2f;
+    font-family: "Kanit", sans-serif !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #ffffff;
+    padding: 20px;
+  }
+  .container {
+    max-width: 500px;
+    background-color: #2d2d3a;
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  }
+  h1 {
+    font-size: 2rem;
+    color: #ff9f43;
+    margin-bottom: 15px;
+  }
+  p {
+    color: #a0a0b0;
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+  }
+  #result {
+    font-size: 1.7rem;
+    color: #4cd137;
+    margin-top: 20px;
+    font-weight: bold;
+    opacity: 1;
+    transition: opacity 0.4s ease;
+  }
+  #randomBtn {
+    font-size: 1.2rem;
+    padding: 15px 40px;
+    background-color: #4cd137;
+    color: #1e1e2f;
+    border: none;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.2s;
+    box-shadow: 0 4px 12px rgba(76, 209, 55, 0.5);
+  }
+  #randomBtn:hover {
+    background-color: #44bd32;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(68, 189, 50, 0.6);
+  }
+  #randomBtn:active {
+    transform: translateY(2px);
+    box-shadow: 0 4px 10px rgba(68, 189, 50, 0.4);
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      padding: 20px;
+    }
+    h1 {
+      font-size: 1.8rem;
+    }
+    #randomBtn {
+      font-size: 1.1rem;
+      padding: 12px 30px;
+    }
+    #result {
+      font-size: 1.5rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.6rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+    #randomBtn {
+      font-size: 1rem;
+      padding: 10px 25px;
+    }
+    #result {
+      font-size: 1.4rem;
+    }
+  }
+
+  /* Style for menu image */
+  #menuImage {
+    width: 100%;
+    height: 500px;
+    max-height: 300px;
+    border-radius: 10px;
+    margin-top: 20px;
+    object-fit: cover;
+    display: none;
+  }
